@@ -1,0 +1,119 @@
+📘 PROMPT PARA CRIAÇÃO DE SITE DE VENDA DE EBOOK PREMIUM
+
+Você é um especialista em vendas de ebooks premium no editorial.
+
+Sua tarefa é criar uma pagina de vendas do ebook Acessibilidade TallkBack, estruturado e formatado conseguir a venda.
+
+---
+
+🎯 TEMA
+Acessibilidade no desenvolvimento Android - Talkback
+
+---
+
+👥 PÚBLICO-ALVO
+Desenvolvedores Android que querem aprender desenvolver apps com acessibilidade com uso do TalckBack.
+
+---
+
+🗣️ TOM DE VOZ
+Estilo humanizado, direto, simples e prático.
+
+---
+
+🚀 OBJETIVO
+Conseguir a venda do ebook.
+
+---
+
+LINK DE VENDA
+
+https://go.hotmart.com/I107357878M
+
+---
+
+🧱 O QUE TEM O EBOOK
+
+Este ebook ensina, na prática, como construir aplicativos Android acessíveis para pessoas com deficiência visual — do zero ao teste. Com linguagem direta e exemplos exclusivamente em Kotlin e Jetpack Compose, o conteúdo foi escrito para desenvolvedores que querem entender o porquê de cada técnica, não apenas copiar código.
+
+Para quem é este ebook:
+
+Desenvolvedores Android — desde quem está começando com Compose até quem já tem experiência e quer fechar as lacunas de acessibilidade nos seus projetos.
+
+Por que vale a pena:
+
+No Brasil, mais de 18 milhões de pessoas têm algum grau de deficiência visual. Apps inacessíveis excluem essas pessoas — e podem gerar problemas legais, já que a Lei Brasileira de Inclusão (LBI) exige conformidade digital. Acessibilidade bem feita não é custo: é qualidade de produto, é ética e é expansão de alcance.
+
+O que você vai aprender:
+
+- Como o TalkBack funciona por dentro e por que isso muda a forma como você escreve código
+
+- Como ativar, navegar e testar seu app usando apenas o leitor de tela — sem depender da visão
+
+- Como a árvore semântica do Compose funciona e como controlá-la com Modifier.semantics
+
+- contentDescription, Role, stateDescription e heading — o vocabulário que o TalkBack lê
+
+- Como organizar a ordem de leitura com traversalGroup, traversalIndex e referências explícitas por ID
+
+- Como declarar ações customizadas, conteúdo expansível e grupos de seleção acessíveis
+
+- Como anunciar mudanças dinâmicas de conteúdo com announceForAccessibility e Live Regions
+
+- Como descrever barras de progresso e coleções (listas e grades) para o TalkBack
+
+- Como escrever testes de semântica com Paparazzi, AccessibilityRenderExtension e SemanticsMatcher
+
+
+#### Estilo:
+Linguagem simples e direta
+Nada de enrolação
+Conteúdo acionável
+
+#### Destaques:
+Use frases de impacto em negrito  
+Exemplo:  
+Se você não prender atenção nos primeiros 3 segundos, o vídeo morre.
+
+
+✍️ REGRAS DE ESCRITA
+
+Linguagem humnizada
+Tom de amigo explicando
+Direto ao ponto
+Sem conteúdo genérico
+Priorizar exemplos e prática
+
+---
+
+🎬 DESIGN SYSTEM (ESTILO YOUTUBE)
+
+Estrutura dinâmica
+Sensação de fluidez na leitura
+Conteúdo escaneável
+Priorizar cores
+Dark primary color #388e3c
+Light primary color #c8e6c9
+Primary color #4caf50
+Text / Icons #FFFFFF
+Accent color #607d8b
+Primary text #212121
+Secondary text #757575
+Divider color #BDBDBD
+
+---
+
+📦 SAÍDA FINAL
+
+Pagina de vendas do ebook deve ser entregue completo
+Visualmente organizado
+Com leitura agradável
+
+---
+
+⚠️ IMPORTANTE
+
+Não gerar conteúdo superficial
+Cada capítulo deve ensinar algo aplicável
+Evitar repetir ideias
+Priorizar clareza e impacto

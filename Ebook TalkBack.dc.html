@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="./image-slot.js"></script>
+<style>
+body{margin:0;background:#FFFFFF;font-family:'Inter',sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#388E3C;text-decoration:none}
+a:hover{color:#4CAF50}
+::selection{background:#C8E6C9;color:#212121}
+:focus-visible{outline:2px solid #4CAF50;outline-offset:2px}
+@keyframes pulseDot{0%,100%{opacity:1}50%{opacity:.35}}
+</style>
+</helmet>
+
+<div style="width:100%;overflow-x:hidden;color:#212121">
+
+  <!-- NAV -->
+  <div style="position:sticky;top:0;z-index:60;background:rgba(15,26,20,0.94);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,0.08)">
+    <div style="max-width:1120px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px">
+      <div style="display:flex;align-items:center;gap:9px;min-width:0">
+        <div style="width:26px;height:26px;border-radius:7px;background:#4CAF50;display:flex;align-items:center;justify-content:center;flex:none">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="#0F1A14"><path d="M12 2a2 2 0 1 1 0 4 2 2 0 0 1 0-4Zm8 5H4a1 1 0 0 0 0 2h5.2l-1.1 5.9L6.6 20a1 1 0 0 0 1.9.6l1.6-4.6h3.8l1.6 4.6a1 1 0 0 0 1.9-.6l-1.5-5.1L14.8 9H20a1 1 0 0 0 0-2Z"/></svg>
+        </div>
+        <div style="font-weight:700;font-size:14px;color:#FFFFFF;letter-spacing:-0.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Acessibilidade Android</div>
+      </div>
+      <a href="https://go.hotmart.com/I107357878M" target="_blank" style="background:#4CAF50;color:#FFFFFF;font-weight:700;font-size:13px;padding:10px 16px;border-radius:8px;white-space:nowrap;flex:none">Quero o ebook</a>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <div style="background:#0F1A14;background-image:radial-gradient(120% 80% at 8% 0%, rgba(76,175,80,0.22) 0%, rgba(15,26,20,0) 60%);padding:52px 20px 56px;position:relative">
+    <div style="max-width:1120px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:44px;align-items:center">
+      <div style="display:flex;flex-direction:column;gap:20px;min-width:0">
+        <div style="display:inline-flex;align-items:center;gap:8px;align-self:flex-start;border:1px solid rgba(76,175,80,0.45);color:#C8E6C9;font-size:11.5px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:6px 12px;border-radius:999px">
+          <span style="width:6px;height:6px;border-radius:50%;background:#4CAF50;animation:pulseDot 2s infinite"></span>
+          Ebook · Kotlin + Jetpack Compose
+        </div>
+        <h1 style="font-size:clamp(30px,7.5vw,50px);line-height:1.06;letter-spacing:-0.03em;font-weight:800;color:#FFFFFF;margin:0;text-wrap:pretty">
+          Seu app funciona.<br>Mas ele <span style="color:#4CAF50">fala</span>?
+        </h1>
+        <p style="font-size:16.5px;line-height:1.6;color:#B9C4BC;margin:0;max-width:520px;text-wrap:pretty">
+          Aprenda a construir aplicativos Android acessíveis para pessoas com deficiência visual — <strong style="color:#FFFFFF;font-weight:600">do zero ao teste automatizado</strong>. Sem teoria vazia: só Kotlin, Compose e TalkBack na prática.
+        </p>
+        <div style="display:flex;flex-direction:column;gap:11px;margin-top:2px">
+          <sc-for list="{{ heroBullets }}" as="b" hint-placeholder-count="3">
+            <div style="display:flex;align-items:flex-start;gap:10px;font-size:14.5px;color:#E4EAE5;line-height:1.45">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#4CAF50" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="flex:none;margin-top:2px"><path d="M20 6 9 17l-5-5"/></svg>
+              <span>{{ b }}</span>
+            </div>
+          </sc-for>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:8px">
+          <a href="https://go.hotmart.com/I107357878M" target="_blank" style="background:#4CAF50;color:#FFFFFF;font-weight:700;font-size:15px;padding:16px 26px;border-radius:10px;display:inline-flex;align-items:center;justify-content:center;gap:9px;box-shadow:0 10px 28px rgba(76,175,80,0.3);flex:1 1 auto;min-width:220px">
+            Garantir meu acesso
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <div style="font-size:12.5px;color:#8A968C;line-height:1.4">Acesso imediato · PDF<br>Pagamento seguro via Hotmart</div>
+        </div>
+      </div>
+
+      <div style="display:flex;justify-content:center;min-width:0">
+        <div style="position:relative;width:100%;max-width:340px">
+          <div style="position:absolute;inset:-10% -6%;background:radial-gradient(closest-side,rgba(76,175,80,0.28),transparent 70%);filter:blur(10px)"></div>
+          <div style="position:relative;border-radius:16px;overflow:hidden;box-shadow:0 26px 60px rgba(0,0,0,0.55);border:1px solid rgba(255,255,255,0.12);aspect-ratio:3/4;background:#132019">
+            <image-slot id="ebook-cover" shape="rect" src="assets/capa.jpg" placeholder="Capa do ebook (3:4)"></image-slot>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STAT BAND -->
+  <div style="background:#388E3C;padding:34px 20px">
+    <div style="max-width:1120px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:26px">
+      <sc-for list="{{ stats }}" as="s" hint-placeholder-count="3">
+        <div style="display:flex;flex-direction:column;gap:5px">
+          <div style="font-size:clamp(26px,5vw,34px);font-weight:800;letter-spacing:-0.02em;color:#FFFFFF;line-height:1">{{ s.value }}</div>
+          <div style="font-size:13.5px;color:#D6EBD7;line-height:1.45;text-wrap:pretty">{{ s.label }}</div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+
+  <!-- PROBLEM -->
+  <div style="max-width:1120px;margin:0 auto;padding:64px 20px 8px">
+    <div style="max-width:700px;display:flex;flex-direction:column;gap:18px">
+      <div style="font-size:11.5px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#388E3C">O problema</div>
+      <h2 style="font-size:clamp(24px,5.5vw,34px);line-height:1.15;letter-spacing:-0.02em;font-weight:700;margin:0;text-wrap:pretty">
+        Um botão sem <span style="font-family:'JetBrains Mono',monospace;font-size:0.82em;background:#C8E6C9;padding:2px 8px;border-radius:6px">contentDescription</span> é um botão que não existe.
+      </h2>
+      <p style="font-size:16px;line-height:1.7;color:#757575;margin:0;text-wrap:pretty">
+        Para quem usa o TalkBack, um ícone sem rótulo é lido como “botão”. Um card mal agrupado vira seis paradas de foco. Um erro anunciado só visualmente simplesmente <strong style="color:#212121;font-weight:600">nunca acontece</strong>.
+      </p>
+      <p style="font-size:16px;line-height:1.7;color:#757575;margin:0;text-wrap:pretty">
+        Não é um bug de borda. É a experiência inteira do seu app para milhões de pessoas — e a <strong style="color:#212121;font-weight:600">Lei Brasileira de Inclusão exige conformidade digital</strong>. Acessibilidade bem feita não é custo: é qualidade de produto, é ética e é alcance.
+      </p>
+    </div>
+  </div>
+
+  <!-- LEARN GRID -->
+  <div style="max-width:1120px;margin:0 auto;padding:56px 20px">
+    <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:28px">
+      <div style="font-size:11.5px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#388E3C">O que você vai aprender</div>
+      <h2 style="font-size:clamp(24px,5.5vw,34px);line-height:1.15;letter-spacing:-0.02em;font-weight:700;margin:0;max-width:640px;text-wrap:pretty">Nove blocos, todos aplicáveis no seu projeto ainda hoje</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px">
+      <sc-for list="{{ lessons }}" as="l" hint-placeholder-count="9">
+        <div style="border:1px solid #BDBDBD;border-radius:12px;padding:20px;display:flex;flex-direction:column;gap:9px;background:#FFFFFF;transition:border-color .2s,box-shadow .2s" style-hover="border-color:#4CAF50;box-shadow:0 6px 20px rgba(33,33,33,0.07)">
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:10px">
+            <div style="width:30px;height:30px;border-radius:8px;background:#C8E6C9;color:#1B5E20;font-size:12.5px;font-weight:800;display:flex;align-items:center;justify-content:center;flex:none">{{ l.n }}</div>
+            <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#607D8B;text-align:right;line-height:1.3">{{ l.api }}</div>
+          </div>
+          <div style="font-weight:700;font-size:15.5px;line-height:1.3;letter-spacing:-0.01em;text-wrap:pretty">{{ l.title }}</div>
+          <div style="font-size:13.5px;line-height:1.55;color:#757575;text-wrap:pretty">{{ l.desc }}</div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+
+  <!-- CODE SAMPLE -->
+  <div style="background:#F5F5F5;border-top:1px solid #BDBDBD;border-bottom:1px solid #BDBDBD;padding:56px 20px">
+    <div style="max-width:1120px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:36px;align-items:center">
+      <div style="display:flex;flex-direction:column;gap:16px;min-width:0">
+        <div style="font-size:11.5px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#388E3C">Prática, não teoria</div>
+        <h2 style="font-size:clamp(23px,5vw,31px);line-height:1.18;letter-spacing:-0.02em;font-weight:700;margin:0;text-wrap:pretty">Cada técnica vem com o código e o porquê</h2>
+        <p style="font-size:15.5px;line-height:1.65;color:#757575;margin:0;text-wrap:pretty">
+          Você não vai copiar snippets sem entender. Cada capítulo mostra o que o TalkBack anuncia <em>antes</em> e <em>depois</em> da mudança — então você aprende a ouvir o seu próprio app.
+        </p>
+        <div style="display:flex;flex-wrap:wrap;gap:8px">
+          <sc-for list="{{ tags }}" as="t" hint-placeholder-count="6">
+            <div style="border:1px solid #4CAF50;color:#388E3C;font-size:12px;font-weight:600;padding:5px 12px;border-radius:7px;font-family:'JetBrains Mono',monospace">{{ t }}</div>
+          </sc-for>
+        </div>
+      </div>
+      <div style="background:#0F1A14;border-radius:12px;overflow:hidden;box-shadow:0 16px 40px rgba(0,0,0,0.22);min-width:0">
+        <div style="display:flex;align-items:center;gap:7px;padding:11px 14px;border-bottom:1px solid rgba(255,255,255,0.08)">
+          <span style="width:9px;height:9px;border-radius:50%;background:#4CAF50"></span>
+          <span style="width:9px;height:9px;border-radius:50%;background:#607D8B"></span>
+          <span style="width:9px;height:9px;border-radius:50%;background:#3A463D"></span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:#8A968C;margin-left:6px">FavoriteButton.kt</span>
+        </div>
+        <pre style="margin:0;padding:18px 16px;font-family:'JetBrains Mono',monospace;font-size:12.5px;line-height:1.75;color:#D8E0D9;overflow-x:auto">{{ codeSample }}</pre>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOR WHOM -->
+  <div style="max-width:1120px;margin:0 auto;padding:56px 20px">
+    <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:26px">
+      <div style="font-size:11.5px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#388E3C">Para quem é</div>
+      <h2 style="font-size:clamp(24px,5.5vw,34px);line-height:1.15;letter-spacing:-0.02em;font-weight:700;margin:0;text-wrap:pretty">Feito para desenvolvedores Android</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px">
+      <div style="border:1px solid #4CAF50;background:#FFFFFF;border-radius:12px;padding:22px;display:flex;flex-direction:column;gap:14px">
+        <div style="font-weight:700;font-size:15.5px;color:#212121">É para você se…</div>
+        <div style="display:flex;flex-direction:column;gap:11px">
+          <sc-for list="{{ forYes }}" as="y" hint-placeholder-count="4">
+            <div style="display:flex;gap:10px;font-size:14px;line-height:1.5;color:#424242">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4CAF50" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="flex:none;margin-top:3px"><path d="M20 6 9 17l-5-5"/></svg>
+              <span>{{ y }}</span>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+      <div style="border:1px solid #BDBDBD;background:#F5F5F5;border-radius:12px;padding:22px;display:flex;flex-direction:column;gap:14px">
+        <div style="font-weight:700;font-size:15.5px;color:#212121">Não é para você se…</div>
+        <div style="display:flex;flex-direction:column;gap:11px">
+          <sc-for list="{{ forNo }}" as="n" hint-placeholder-count="3">
+            <div style="display:flex;gap:10px;font-size:14px;line-height:1.5;color:#757575">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#BDBDBD" stroke-width="3" stroke-linecap="round" style="flex:none;margin-top:3px"><path d="M18 6 6 18M6 6l12 12"/></svg>
+              <span>{{ n }}</span>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- AUTHOR -->
+  <div style="background:#0F1A14;padding:56px 20px">
+    <div style="max-width:1120px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:36px;align-items:center">
+      <div style="display:flex;align-items:center;gap:18px;min-width:0">
+        <div style="width:88px;height:88px;border-radius:50%;overflow:hidden;flex:none;border:2px solid #4CAF50">
+          <image-slot id="author-photo" shape="circle" src="assets/autor.jpg" placeholder="Foto"></image-slot>
+        </div>
+        <div style="min-width:0">
+          <div style="font-size:11.5px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#4CAF50;margin-bottom:6px">Quem escreveu</div>
+          <div style="font-size:21px;font-weight:700;color:#FFFFFF;letter-spacing:-0.02em">Filipe Ramon</div>
+          <div style="font-size:13.5px;color:#8A968C;margin-top:3px">Android Software Engineer · 9+ anos</div>
+        </div>
+      </div>
+      <p style="font-size:15.5px;line-height:1.7;color:#B9C4BC;margin:0;text-wrap:pretty">
+        Nove anos construindo apps Android em produção para bancos e grandes operações — Caixa, DIGIO, BS2, Unidas. Kotlin, Jetpack Compose, Clean Architecture e milhares de usuários reais do outro lado da tela. <strong style="color:#FFFFFF;font-weight:600">Este ebook é o que eu queria ter lido quando comecei a levar acessibilidade a sério.</strong>
+      </p>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <div style="max-width:760px;margin:0 auto;padding:60px 20px">
+    <h2 style="font-size:clamp(24px,5.5vw,32px);line-height:1.15;letter-spacing:-0.02em;font-weight:700;margin:0 0 24px;text-wrap:pretty">Perguntas frequentes</h2>
+    <div style="display:flex;flex-direction:column;gap:10px">
+      <sc-for list="{{ faqs }}" as="f" hint-placeholder-count="5">
+        <div style="border:1px solid #BDBDBD;border-radius:12px;padding:18px 20px;background:#FFFFFF">
+          <div style="font-weight:700;font-size:15px;margin-bottom:8px;line-height:1.35;text-wrap:pretty">{{ f.q }}</div>
+          <div style="font-size:14px;line-height:1.65;color:#757575;text-wrap:pretty">{{ f.a }}</div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+
+  <!-- FINAL CTA -->
+  <div style="background:#388E3C;background-image:radial-gradient(90% 120% at 100% 0%, rgba(255,255,255,0.14) 0%, rgba(56,142,60,0) 60%);padding:64px 20px">
+    <div style="max-width:720px;margin:0 auto;display:flex;flex-direction:column;align-items:center;text-align:center;gap:18px">
+      <h2 style="font-size:clamp(26px,6vw,38px);line-height:1.12;letter-spacing:-0.025em;font-weight:800;color:#FFFFFF;margin:0;text-wrap:pretty">Torne seu próximo commit acessível</h2>
+      <p style="font-size:16px;line-height:1.65;color:#D6EBD7;margin:0;max-width:520px;text-wrap:pretty">
+        Acesso imediato ao ebook completo em PDF. Comece pelo capítulo que resolve o seu problema de hoje.
+      </p>
+      <a href="https://go.hotmart.com/I107357878M" target="_blank" style="background:#FFFFFF;color:#1B5E20;font-weight:800;font-size:16px;padding:17px 34px;border-radius:11px;display:inline-flex;align-items:center;gap:10px;box-shadow:0 12px 30px rgba(0,0,0,0.18);margin-top:4px">
+        Comprar agora
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1B5E20" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <div style="font-size:12.5px;color:#C8E6C9">Compra segura via Hotmart · 7 dias de garantia</div>
+    </div>
+  </div>
+
+  <div style="background:#0F1A14;padding:26px 20px;text-align:center">
+    <div style="font-size:12.5px;color:#6E7B70;line-height:1.6">
+      © 2026 Filipe Ramon · <a href="mailto:filipe.ramon7@gmail.com" style="color:#8A968C">filipe.ramon7@gmail.com</a><br>
+      Acessibilidade no desenvolvimento Android — TalkBack
+    </div>
+  </div>
+
+  <a href="https://go.hotmart.com/I107357878M" target="_blank" style="position:fixed;left:16px;right:16px;bottom:max(14px,env(safe-area-inset-bottom));z-index:70;background:#4CAF50;color:#FFFFFF;font-weight:800;font-size:15px;padding:15px;border-radius:12px;display:{{ mobileBarDisplay }};align-items:center;justify-content:center;gap:9px;box-shadow:0 -2px 30px rgba(0,0,0,0.28)">
+    Quero o ebook agora
+  </a>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:420}}">
+class Component extends DCLogic {
+  state = { narrow: false };
+
+  componentDidMount() {
+    this.check = () => this.setState({ narrow: window.innerWidth < 700 });
+    this.check();
+    window.addEventListener("resize", this.check);
+  }
+  componentWillUnmount() { window.removeEventListener("resize", this.check); }
+
+  renderVals() {
+    return {
+      mobileBarDisplay: this.state.narrow ? "flex" : "none",
+      codeSample: [
+        '// TalkBack lê: "botão"  ✗',
+        "Icon(Icons.Filled.Favorite, null)",
+        "",
+        "// TalkBack lê:",
+        '// "Favoritar, alternar, desativado"  ✓',
+        "IconButton(onClick = ::toggle) {",
+        "  Icon(",
+        "    Icons.Filled.Favorite,",
+        '    contentDescription = "Favoritar"',
+        "  )",
+        "}.semantics {",
+        "  role = Role.Switch",
+        '  stateDescription = "desativado"',
+        "}"
+      ].join("\n"),
+      heroBullets: [
+        "Do zero ao teste: ativar, navegar e validar com o leitor de tela",
+        "Exemplos exclusivamente em Kotlin e Jetpack Compose",
+        "O porquê de cada técnica — não só o código pronto"
+      ],
+      stats: [
+        { value: "18 milhões", label: "de brasileiros têm algum grau de deficiência visual" },
+        { value: "LBI", label: "A Lei Brasileira de Inclusão exige conformidade digital" },
+        { value: "9 blocos", label: "de conteúdo aplicável, do básico ao teste automatizado" }
+      ],
+      lessons: [
+        { n: "01", api: "TalkBack", title: "Como o TalkBack funciona por dentro", desc: "Entenda o motor do leitor de tela e por que isso muda a forma como você escreve código." },
+        { n: "02", api: "gestos", title: "Ativar, navegar e testar sem depender da visão", desc: "Use seu app apenas com o leitor de tela. É aqui que os bugs de acessibilidade aparecem." },
+        { n: "03", api: "Modifier.semantics", title: "A árvore semântica do Compose", desc: "Como o Compose monta a árvore que o TalkBack lê — e como assumir o controle dela." },
+        { n: "04", api: "contentDescription · Role", title: "O vocabulário que o TalkBack anuncia", desc: "contentDescription, Role, stateDescription e heading aplicados com critério." },
+        { n: "05", api: "traversalIndex", title: "Ordem de leitura sob controle", desc: "traversalGroup, traversalIndex e referências explícitas por ID para leitura previsível." },
+        { n: "06", api: "customActions", title: "Ações, conteúdo expansível e seleção", desc: "Declare ações customizadas e grupos de seleção que fazem sentido no áudio." },
+        { n: "07", api: "announceForAccessibility", title: "Anunciar mudanças dinâmicas", desc: "Live Regions e anúncios para estados que mudam sem o usuário perceber." },
+        { n: "08", api: "ProgressBarRangeInfo", title: "Progresso, listas e grades", desc: "Como descrever barras de progresso e coleções para o TalkBack não se perder." },
+        { n: "09", api: "Paparazzi · SemanticsMatcher", title: "Testes de semântica automatizados", desc: "Paparazzi, AccessibilityRenderExtension e SemanticsMatcher no seu pipeline." }
+      ],
+      tags: ["Kotlin", "Jetpack Compose", "Modifier.semantics", "Live Regions", "Paparazzi", "SemanticsMatcher"],
+      forYes: [
+        "Você desenvolve Android e está começando com Jetpack Compose",
+        "Você já tem experiência e quer fechar as lacunas de acessibilidade nos seus projetos",
+        "Seu app precisa atender requisitos legais ou de auditoria",
+        "Você quer testar acessibilidade de forma automatizada, não no olho"
+      ],
+      forNo: [
+        "Você procura teoria de acessibilidade sem código",
+        "Você trabalha só com iOS ou web",
+        "Você quer copiar snippets sem entender o motivo"
+      ],
+      faqs: [
+        { q: "Preciso saber Jetpack Compose?", a: "O básico ajuda, mas cada exemplo é explicado passo a passo. Se você já monta telas com Composables, está pronto." },
+        { q: "Serve para projetos com XML?", a: "Os exemplos são em Compose, mas os conceitos — árvore semântica, ordem de foco, anúncios — se aplicam igualmente a Views. O ebook aponta o equivalente quando existe." },
+        { q: "Em qual formato recebo?", a: "PDF, com acesso imediato após a compra pela Hotmart. Leia no computador, tablet ou celular." },
+        { q: "Preciso de um leitor de tela instalado?", a: "O TalkBack já vem no Android. O capítulo 2 mostra como ativar, configurar e navegar do jeito que seus usuários navegam." },
+        { q: "E se não for para mim?", a: "A Hotmart garante 7 dias para reembolso integral. Sem burocracia." }
+      ]
+    };
+  }
+}
+
+</script>
+</body>
+</html>
